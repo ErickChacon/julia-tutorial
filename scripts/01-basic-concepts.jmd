@@ -27,6 +27,9 @@ function greet_name(x)
     out = "Hello, "  * x
     return out
 end
+```
+
+```julia
 greet_name("Julia")
 ```
 

@@ -7,6 +7,9 @@ In this section, we provide a quick introduction to common basic objects. The fu
 
 ```julia
 1
+```
+
+```julia
 typeof(1)
 ```
 
@@ -14,6 +17,9 @@ typeof(1)
 
 ```julia
 10.0
+```
+
+```julia
 typeof(10.0)
 ```
 
@@ -28,6 +34,9 @@ typeof(1 + 2im)
 
 ```julia
 10 // 15
+```
+
+```julia
 typeof(10 // 15)
 ```
 
@@ -35,6 +44,9 @@ typeof(10 // 15)
 
 ```julia
 'x'
+```
+
+```julia
 typeof('x')
 ```
 
@@ -42,6 +54,9 @@ typeof('x')
 
 ```julia
 "julia"
+```
+
+```julia
 typeof("julia")
 ```
 
@@ -49,6 +64,9 @@ typeof("julia")
 
 ```julia
 (10.0, 2, "string")
+```
+
+```julia
 typeof((10.0, 2, "string"))
 ```
 
@@ -56,6 +74,9 @@ typeof((10.0, 2, "string"))
 
 ```julia
 (a = 10.0, b = 2, c = "string")
+```
+
+```julia
 typeof((a = 10.0, b = 2, c = "string"))
 ```
 
