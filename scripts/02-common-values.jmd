@@ -8,7 +8,6 @@ In this section, we provide a quick introduction to common basic objects. The fu
 ```julia
 1
 typeof(1)
-# Int64
 ```
 
 - Floating-Point numbers
@@ -16,7 +15,6 @@ typeof(1)
 ```julia
 10.0
 typeof(10.0)
-# Float64
 ```
 
 - Complex numbers
@@ -24,7 +22,6 @@ typeof(10.0)
 ```julia
 1 + 2im
 typeof(1 + 2im)
-# Complex{Int64}
 ```
 
 - Rational numbers
@@ -32,7 +29,6 @@ typeof(1 + 2im)
 ```julia
 10 // 15
 typeof(10 // 15)
-# Rational{Int64}
 ```
 
 - Character
@@ -40,7 +36,6 @@ typeof(10 // 15)
 ```julia
 'x'
 typeof('x')
-# Char
 ```
 
 - Strings
@@ -48,7 +43,6 @@ typeof('x')
 ```julia
 "julia"
 typeof("julia")
-# String
 ```
 
 - Tuples: fixed-length container holding any values
@@ -56,7 +50,6 @@ typeof("julia")
 ```julia
 (10.0, 2, "string")
 typeof((10.0, 2, "string"))
-# Tuple{Float64,Int64,String}
 ```
 
 - Named tuples: Tuples with element names
@@ -64,6 +57,5 @@ typeof((10.0, 2, "string"))
 ```julia
 (a = 10.0, b = 2, c = "string")
 typeof((a = 10.0, b = 2, c = "string"))
-# NamedTuple{(:a, :b, :c),Tuple{Float64,Int64,String}}
 ```
 
