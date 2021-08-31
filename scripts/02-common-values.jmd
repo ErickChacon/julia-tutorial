@@ -1,0 +1,69 @@
+## Common values
+
+In this section, we provide a quick introduction to common basic objects. The function
+`typeof` used below returns the type of object provided as argument.
+
+- Integers
+
+```julia
+1
+typeof(1)
+# Int64
+```
+
+- Floating-Point numbers
+
+```julia
+10.0
+typeof(10.0)
+# Float64
+```
+
+- Complex numbers
+
+```julia
+1 + 2im
+typeof(1 + 2im)
+# Complex{Int64}
+```
+
+- Rational numbers
+
+```julia
+10 // 15
+typeof(10 // 15)
+# Rational{Int64}
+```
+
+- Character
+
+```julia
+'x'
+typeof('x')
+# Char
+```
+
+- Strings
+
+```julia
+"julia"
+typeof("julia")
+# String
+```
+
+- Tuples: fixed-length container holding any values
+
+```julia
+(10.0, 2, "string")
+typeof((10.0, 2, "string"))
+# Tuple{Float64,Int64,String}
+```
+
+- Named tuples: Tuples with element names
+
+```julia
+(a = 10.0, b = 2, c = "string")
+typeof((a = 10.0, b = 2, c = "string"))
+# NamedTuple{(:a, :b, :c),Tuple{Float64,Int64,String}}
+```
+

@@ -1,0 +1,40 @@
+# Julia Language
+
+This is a selective description of topics taken from [Julia documentation](https://docs.julialang.org).
+
+## Get started
+
+You can start using Julia on an interactive session by running `julia` from the command
+line. The session can be closed using `CTRL-D` or typing `exit()` inside Julia session.
+
+```julia
+exit()
+```
+
+We can evaluate a script using the function `include`.
+
+```julia
+include("file.jl")
+```
+
+A custom script with optional arguments can also be evaluated non-interactively providing
+the script name as a first argument to the `julia` command.
+
+```bash
+julia script.jl arg1 arg2
+```
+
+Note that the script name is passed to the global variable `PROGRAM_FILE`. Similarly,
+the arguments are passed to `ARGS`.
+
+A simple example for `script.jl` where the script name and arguments are printed can be
+found below.
+
+```julia
+# script.jl
+println(PROGRAM_FILE)
+for x in ARGS
+    println(x)
+end
+```
+
