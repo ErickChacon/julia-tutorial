@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "c.NotebookApp.notebook_dir = '~'"
+jupyter notebook --generate-config
+echo "c.NotebookApp.notebook_dir = '~'" > .jupyter/jupyter_notebook_config.py
