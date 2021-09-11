@@ -80,3 +80,8 @@ typeof((10.0, 2, "string"))
 typeof((a = 10.0, b = 2, c = "string"))
 ```
 
+- Dictionaries:
+
+```julia
+Dict("Poisson" => 1, "Gaussian" => 2)
+```

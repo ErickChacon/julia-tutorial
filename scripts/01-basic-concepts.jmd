@@ -1,7 +1,7 @@
 ## Basic concepts
 
 - **Values**: Julia can work with different type of values like numbers, characters,
-  strings, etc. Below, we see an example of an string value and a numeric value.
+  strings, so on. Below, we see an example of an string value and a numeric value.
 
 ```julia
 "Hello"
@@ -20,7 +20,7 @@ greet = "Hello"
 
 - **Functions**: To define a function, we start with the `function` key followed by the name
   of the function with braces, and it finish with the `end` key. The output value can be
-  explicitely defined using the `return` key. See an example below.
+  explicitly defined using the `return` key. See an example below.
 
 ```julia
 function greet_name(x)
@@ -35,7 +35,7 @@ greet_name("Julia")
 
 - **Printing**: The most common function to print a text is `print`, while `println` has
   the same behaviour but adds a newline at the end. We can use `$` to interpolate the
-  value of a vairable. You can use braces for expressions (e.g. `$(1 + 1)`). In the
+  value of a variable. You can use braces for expressions (e.g. `$(1 + 1)`). In the
   example below, variables `who` and `greet` are interpolated in the printed text.
 
 ```julia
