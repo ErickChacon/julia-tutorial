@@ -1,6 +1,6 @@
-using Weave
+using Literate
 
-jmds = filter(x -> occursin(r"[0-9]+-.*\.jmd$", x), readdir("scripts", join = true))
-ipynbs = replace.(replace.(jmds, "scripts" => "notebooks"), ".jmd" => ".ipynb")
+jls = filter(x -> occursin(r"[0-9]+-.*\.jl$", x), readdir("scripts", join = true))
+ipynbs = replace.(replace.(jls, "scripts" => "notebooks"), ".jl" => ".ipynb")
 
-convert_doc.(jmds, ipynbs)
+Literate.notebook.(jls, "notebooks", execute = true)
