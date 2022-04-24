@@ -40,7 +40,7 @@ print(a, ", ", b)
 
 # ### Allowed variable names
 #
-# - Unicode names can be used. This is an interesting Julia feature.
+# - Unicode names can be used. This helps to write code closer to mathematical equations.
 
 μ = 0
 print(μ)
@@ -79,8 +79,9 @@ print(β)
 # #  [1] top-level scope at none:1
 # ```
 #
-# - Some Julia naming conventions:
-#     - Use lower case for variables, functions, and macros (e.g. `name = "Julia"`).
-#     - Underscore (`_`) use is discouraged (e.g. `lastname = "Montalvan"`).
-#     - Use *uper camel case* for `Types` and `Modules`.
-#     - Use `!` at the end of a function name when it mutates its arguments.
+# ### Some Julia naming conventions
+#
+# - Use lower case for variables, functions, and macros (e.g. `name = "Julia"`).
+# - Underscore (`_`) use is discouraged (e.g. `lastname = "Montalvan"`).
+# - Use *uper camel case* for `Types` and `Modules`.
+# - Use `!` at the end of a function name when it mutates its arguments.

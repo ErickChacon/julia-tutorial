@@ -1,9 +1,14 @@
-# # Julia Language
+# # Introduction to the Julia programming language
 #
-# This is a selective description of topics taken from [Julia
+# In this tutorial we will cover the basic elements of Julia. For more detailed
+# information, you can check the official [Julia
 # documentation](https://docs.julialang.org).
 #
 # ## Get started
+#
+# The three main ways of using Julia are by writing commands directly in an *interactive
+# session*, working with *scripts*, and working with *notebooks*. These are described
+# below.
 #
 # ### An interactive session
 #
@@ -16,7 +21,7 @@
 #
 # The session can be closed using `CTRL-D` or typing `exit()` inside Julia session.
 #
-# ###  Scripts
+# ### Scripts
 #
 # Julia scripts have extension `*.jl`. An script is just a file containing Julia commands.
 # The script `src/00-file.jl` has the following commands:

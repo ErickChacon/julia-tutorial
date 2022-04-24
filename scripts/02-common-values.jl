@@ -3,6 +3,14 @@
 # In this section, we provide a quick introduction to common basic objects. The function
 # `typeof` used below returns the type of object provided as argument.
 #
+# - Logical
+
+true
+#-
+false
+#-
+typeof(true)
+
 # - Integers
 
 1
@@ -25,7 +33,7 @@ typeof(1 + 2im)
 
  10 // 15
 #-
- typeof(10 // 15)
+typeof(10 // 15)
 
 # - Character
 
@@ -39,18 +47,25 @@ typeof('x')
 #-
 typeof("julia")
 
+# - Symbol
+
+:name
+#-
+typeof(:name)
+
 # - Tuples: fixed-length container holding any values
 
-(10.0, 2, "string")
+("John", 29, 10.0)
 #-
-typeof((10.0, 2, "string"))
+typeof(("John", 29, 10.0))
 
 # - Named tuples: Tuples with element names
 
-(a = 10.0, b = 2, c = "string")
+(name = "John", age = 29, value = 10.0)
 #-
-typeof((a = 10.0, b = 2, c = "string"))
+typeof((name = "John", age = 29, value = 10.0))
 
 # - Dictionaries:
 
 Dict("Poisson" => 1, "Gaussian" => 2)
+
