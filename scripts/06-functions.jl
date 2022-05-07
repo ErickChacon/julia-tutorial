@@ -36,7 +36,7 @@ f(1, 3)
 # functional programming. For example, to apply a particular function to a set of values
 # using the `map` function.
 
-map(x -> x^2 + 2x - 1, [1, 3, -1])
+map(x -> 2x - 1, [1, 3, -1])
 
 # ### Return
 #
@@ -83,89 +83,72 @@ function concatenate(x::String, y::String)
 end
 concatenate("Hola", "Erick")
 
+# ### Keyword arguments
+#
+# Given that `julia` functions works with multiple dispatching, the order of the arguments
+# is important. In situations where we need several arguments, it might become complicated
+# to remember the order. For those cases, we can use *keyword arguments* such us the name
+# of the argument is followed by the value. These keyword arguments can be included after
+# the arguments using a `;` as separation.
+#
+# ```julia
+# function myplot(x, y; color = "black", linewidth = 2)
+#     #
+# end
+# myplot(x, y; color = "red")
+# ```
+#
+# Functions with an indefinite number of keyword arguments can also be defined.
+#
+# ```julia
+# function myplot(x, y; kwargs...)
+#     plot(x, y; kwargs...)
+# end
+# myplot(x, y; color = "red")
+# ```
+
 # ### Varargs functions
 #
-# Functions with a variable number of arguments
+# Functions with a variable number of arguments.
 
-bar(a, b, x...) = (a, b, x)
-
-bar(1, 2)
-bar(1, 2, 3)
-bar(1, 2, 3, 4)
-
-x = (3, 4)
-bar(1, 2, x...) # splat tuple or array appending ...
-x = [3, 4]
-bar(1, 2, x...) # splat tuple or array appending ...
-
-# This also works for
-#
-#
-# ### Operators are functions
-
-1 + 2 + 3
-+(1, 2, 3)
-mysum = +; mysum(1, 2, 3)
-
-f1(x) = x^2
-f1.([1, 2, 3])
-
-# - Tuple
-
-x = (0xe01, 1 + 1, "hello", 'x')
-typeof(x)
-
-x = (a = 1, b = "me")
-x.a
-
-# - Multiple return values
-
-function foo(a, b)
-    a + b, a - b
+function bar(a, b, x...)
+    a, b, x
 end
-foo(2, 3)
-x, y = foo(2, 3)
+bar(1, 2)
+#-
+bar(1, 2, 3)
+#-
+bar(1, 2, 3, 4)
+#-
 
-# - Argument destructuring
-#
-# minmax(x, y) = (y < x) ? (y, x) : (x, y)
-# minmax(10, 2)
-# minmax(2, 10)
-#
-# range((min, max)) = max - min
-# range(minmax(10, 2))
-#
-# - Varargs functions
-#
-# bar(a, b, x...) = (a, b, x)
-# bar(1, 2)
-# bar(1, 2, 3)
-# bar(1, 2, 3, 4)
-# typeof(bar(1, 2, 3, 4)[3])
-#
-# x = (3, 4, 5)
-# bar(1, x...)
-# x = [3, 4, 5]
-# bar(1, x...)
-#
-# ### Optional arguments
-#
-# <!-- # using Dates -->
-# <!-- # function Date(y::Int64, m::Int64=1, d::Int64=1) -->
-# <!-- #     err = validargs(Date, y, m, d) -->
-# <!-- #     err === nothing || throw(err) -->
-# <!-- #     return Date(UTD(totaldays(y, m, d))) -->
-# <!-- # end -->
-# <!-- # Date(2000, 12, 12) -->
-# <!--  -->
-#
+# A similar syntax can be used to splat the values of a collection.
+
+extra = (3, 4)
+bar(1, 2, extra...)
+#-
+x = [3, 4]
+bar(1, 2, x...)
+
 # ### Function composition and piping
 #
+# Julia can combine functions by composing with the operator `∘`.
+
+sqrt(+(3, 6))
+#-
 (sqrt ∘ +)(3, 6)
-map(first ∘ reverse ∘ uppercase, split("this is julia"))
+
+# In the following example we create a function that reverse an "string", then obtain the
+# first letter, and finally convert it to capital.
+
+lastletter = uppercase ∘ first ∘ reverse
+lastletter("julia")
+#-
+map(uppercase ∘ first ∘ reverse, ("this", "is", "julia"))
+
+# On the other hand, the pipe operator `|>` can be used to use the output of a function as
+# the input of another function.
 
 (3, 6) |>
     sum |>
     sqrt
 
-["a", "list", "of", "strings"] .|> [uppercase, reverse, titlecase, length]
