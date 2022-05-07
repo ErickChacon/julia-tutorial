@@ -31,7 +31,7 @@ typeof(1 + 2im)
 
 # - Rational numbers
 
- 10 // 15
+10 // 15
 #-
 typeof(10 // 15)
 
@@ -40,6 +40,8 @@ typeof(10 // 15)
 'x'
 #-
 typeof('x')
+#-
+typeof('β')
 
 # - Strings
 
@@ -53,7 +55,7 @@ typeof("julia")
 #-
 typeof(:name)
 
-# - Tuples: fixed-length container holding any values
+# - Tuples: unmutable fixed-length container holding any values
 
 ("John", 29, 10.0)
 #-
