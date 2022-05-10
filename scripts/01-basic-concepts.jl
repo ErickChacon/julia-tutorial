@@ -1,4 +1,4 @@
-# ## Basic concepts
+# # Basic concepts
 #
 # - **Values**: Julia can work with different type of values like numbers, characters,
 # strings, so on. Below, we see an example of an string, numeric and complex value.

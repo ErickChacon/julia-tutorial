@@ -1,4 +1,4 @@
-# ## Common values
+# # Common values
 #
 # In this section, we provide a quick introduction to common basic objects. The function
 # `typeof` used below returns the type of object provided as argument.

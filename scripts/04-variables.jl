@@ -1,4 +1,4 @@
-# ## Variables
+# # Variables
 #
 # A variable is a name that will be associated to a value through a memory space; these
 # are case-sensitive.

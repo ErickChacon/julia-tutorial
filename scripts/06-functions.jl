@@ -1,4 +1,4 @@
-# ## Functions
+# # Functions
 #
 # A function is an object mapping a tuple of arguments to a return value.
 #
