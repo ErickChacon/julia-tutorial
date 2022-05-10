@@ -8,4 +8,6 @@ ipynbs = replace.(replace.(jls, "scripts" => "notebooks"), ".jl" => ".ipynb")
 rm("notebooks", recursive = true)
 Literate.notebook.(jls, "notebooks", execute = true)
 
+# Create markdown files
+Literate.markdown.(jls, joinpath("docs", "src"), execute = true)
 
