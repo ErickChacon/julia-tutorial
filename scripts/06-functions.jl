@@ -62,9 +62,9 @@ function maxmin(x, y)
 end
 #-
 maxmin(2, 3.0)
-#=
+#-
 typeof(maxmin(2, 3.0))
-#=
+#-
 a, b = maxmin(2, 3.0)
 
 # ### Multiple dispatching
