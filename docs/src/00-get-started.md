@@ -1,5 +1,5 @@
 ```@meta
-EditURL = "<unknown>/scripts/00-get-started.jl"
+EditURL = "https://github.com/ErickChacon/julia-tutorial/scripts/00-get-started.jl"
 ```
 
 # Introduction to the Julia programming language

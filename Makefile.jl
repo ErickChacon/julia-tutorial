@@ -13,4 +13,5 @@ Literate.notebook.(jls, "notebooks", execute = true)
 
 # Create markdown files
 rm(joinpath("docs", "src"), recursive = true, force = true)
-Literate.markdown.(jls, joinpath("docs", "src"), execute = true)
+Literate.markdown.(jls, joinpath("docs", "src"), execute = true, documenter = true,
+    repo_root_url = "https://github.com/ErickChacon/julia-tutorial")

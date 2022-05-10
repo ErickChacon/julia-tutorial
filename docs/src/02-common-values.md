@@ -1,5 +1,5 @@
 ```@meta
-EditURL = "<unknown>/scripts/02-common-values.jl"
+EditURL = "https://github.com/ErickChacon/julia-tutorial/scripts/02-common-values.jl"
 ```
 
 # Common values
