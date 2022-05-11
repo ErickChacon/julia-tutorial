@@ -7,7 +7,7 @@ EditURL = "https://github.com/ErickChacon/julia-tutorial/blob/main/scripts/04-va
 A variable is a name that will be associated to a value through a memory space; these
 are case-sensitive.
 
-### Defining variables
+## Defining variables
 
 Variables are defined and modified using `=`, see some examples below.
 
@@ -56,7 +56,7 @@ print(x, ", ",  typeof(x))
 1//2, Rational{Int64}
 ````
 
-### Define more than one variable
+## Define more than one variable
 
 More that one variable can be defined using tuples syntax.
 
@@ -96,7 +96,7 @@ print(a, ", ", b)
 1, 10
 ````
 
-### Allowed variable names
+## Allowed variable names
 
 - Unicode names can be used. This helps to write code closer to mathematical equations.
 

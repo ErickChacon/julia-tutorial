@@ -6,7 +6,7 @@ EditURL = "https://github.com/ErickChacon/julia-tutorial/blob/main/scripts/06-fu
 
 A function is an object mapping a tuple of arguments to a return value.
 
-### Basic syntax
+## Basic syntax
 
 A standard way of defining a function in `julia` is using a block with definition, body
 and return value.
@@ -75,7 +75,7 @@ map(x -> 2x - 1, [1, 3, -1])
  -3
 ````
 
-### Return
+## Return
 
 We can define the output type of the function
 
@@ -141,7 +141,7 @@ a, b = maxmin(2, 3.0)
 (3.0, 2.0)
 ````
 
-### Multiple dispatching
+## Multiple dispatching
 
 A main feature of `julia` is multiple dispatching, meaning that it accepts multiple
 definitions of a function with different number of arguments, or different argument
@@ -170,7 +170,7 @@ concatenate("Hola", "Erick")
 "HolaErick"
 ````
 
-### Keyword arguments
+## Keyword arguments
 
 Given that `julia` functions works with multiple dispatching, the order of the arguments
 is important. In situations where we need several arguments, it might become complicated
@@ -194,7 +194,7 @@ end
 myplot(x, y; color = "red")
 ```
 
-### Varargs functions
+## Varargs functions
 
 Functions with a variable number of arguments.
 
@@ -245,7 +245,7 @@ bar(1, 2, x...)
 (1, 2, (3, 4))
 ````
 
-### Function composition and piping
+## Function composition and piping
 
 Julia can combine functions by composing with the operator `∘`.
 

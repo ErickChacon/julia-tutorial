@@ -1,7 +1,9 @@
 [![][docs-img]][docs-url]
 [![][binder-img]][binder-url]
 
-## Julia for Statistics
+## A Julia Tutorial
+
+This is a julia tutorial accesible through binder and as a web page.
 
 [docs-img]: https://img.shields.io/badge/docs-latest%20release-blue.svg
 [docs-url]: https://erickchacon.github.io/julia-tutorial/
