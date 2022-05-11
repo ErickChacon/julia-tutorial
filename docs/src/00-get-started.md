@@ -75,7 +75,3 @@ Notebooks are an interactive way to execute code, but also add formated markdown
 You are probably looking at this file as a notebook. In this course, we will mainly use
 notebooks given that it is easier for students to start up.
 
----
-
-*This page was generated using [Literate.jl](https://github.com/fredrikekre/Literate.jl).*
-

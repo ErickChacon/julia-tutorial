@@ -168,7 +168,3 @@ else = false
 - Use *uper camel case* for `Types` and `Modules`.
 - Use `!` at the end of a function name when it mutates its arguments.
 
----
-
-*This page was generated using [Literate.jl](https://github.com/fredrikekre/Literate.jl).*
-

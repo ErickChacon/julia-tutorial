@@ -298,7 +298,3 @@ the input of another function.
 3.0
 ````
 
----
-
-*This page was generated using [Literate.jl](https://github.com/fredrikekre/Literate.jl).*
-
