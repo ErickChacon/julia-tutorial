@@ -12,7 +12,7 @@ rm("notebooks", recursive = true, force = true)
 Literate.notebook.(jls, "notebooks", execute = true)
 
 # Create markdown files
+repo_path = "https://github.com/ErickChacon/julia-tutorial/blob/main"
 rm(joinpath("docs", "src"), recursive = true, force = true)
 Literate.markdown.(jls, joinpath("docs", "src"), execute = true, documenter = true,
-    repo_root_url = "https://github.com/ErickChacon/julia-tutorial/blob/main",
-    credit = false)
+    repo_root_url = repo_path, credit = false)
