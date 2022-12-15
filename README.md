@@ -10,3 +10,12 @@ This is a julia tutorial accesible through binder and as a web page.
 
 [binder-img]: https://mybinder.org/badge_logo.svg
 [binder-url]: https://mybinder.org/v2/gh/ErickChacon/julia-for-statistics/HEAD?filepath=notebooks
+
+## Julia Setup
+
+1. Install julia (https://julialang.org/)
+2. Install VSCode (https://code.visualstudio.com/)
+3. Install VSCode extensions:
+    a. Julia
+    b. Jupyter
+4. Enable Notebook controller in the Julia extension settings.
