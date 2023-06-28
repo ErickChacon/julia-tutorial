@@ -19,7 +19,7 @@ This is a julia tutorial accesible through binder and as a web page.
         1. Open `julia`
         1. Open the package manager using `]`
         1. Install IJulia executing `add IJulia`
-        1.  Execute Jupyter inside julia with `using IJulia; jupyterlab()`
+        1. Execute Jupyter inside julia with `using IJulia; jupyterlab()`
     - VSCode
         1. Install VSCode (https://code.visualstudio.com/)
         1. Open VSCode
