@@ -20,9 +20,9 @@ This is a julia tutorial accesible through binder and as a web page.
         1. Open the package manager using `]`
         1. Install IJulia executing `add IJulia`
         1.  Execute Jupyter inside julia with `using IJulia; jupyterlab()`
-    b. VSCode
-        i. Install VSCode (https://code.visualstudio.com/)
-        ii. Open VSCode
-        iii. Click on `Extensions`, search `julia` and click `install`.
-        iv.  Click on `Extensions`, search `jupyter` and click `install`.
-        v.   Enable Notebook controller in the Julia extension settings.
+    - VSCode
+        1. Install VSCode (https://code.visualstudio.com/)
+        1. Open VSCode
+        1. Click on `Extensions`, search `julia` and click `install`.
+        1. Click on `Extensions`, search `jupyter` and click `install`.
+        1. Enable Notebook controller in the Julia extension settings.
