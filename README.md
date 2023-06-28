@@ -3,8 +3,6 @@
 
 ## A Julia Tutorial
 
-Error during build: ('Connection broken: IncompleteRead(0 bytes read)', IncompleteRead(0 bytes read))
-
 This is a julia tutorial accesible through binder and as a web page.
 
 [docs-img]: https://img.shields.io/badge/docs-latest%20release-blue.svg
