@@ -15,11 +15,11 @@ This is a julia tutorial accesible through binder and as a web page.
 
 1. Install julia (https://julialang.org/downloads/)
 2. Install an interface:
-    1. IJulia
-        i. Open `julia`
-        ii. Open the package manager using `]`
-        iii. Install IJulia executing `add IJulia`
-        iv.  Execute Jupyter inside julia with `using IJulia; jupyterlab()`
+    - IJulia
+        1. Open `julia`
+        1. Open the package manager using `]`
+        1. Install IJulia executing `add IJulia`
+        1.  Execute Jupyter inside julia with `using IJulia; jupyterlab()`
     b. VSCode
         i. Install VSCode (https://code.visualstudio.com/)
         ii. Open VSCode
