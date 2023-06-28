@@ -15,7 +15,7 @@ This is a julia tutorial accesible through binder and as a web page.
 
 1. Install julia (https://julialang.org/downloads/)
 2. Install an interface:
-    a. IJulia
+    1. IJulia
         i. Open `julia`
         ii. Open the package manager using `]`
         iii. Install IJulia executing `add IJulia`
@@ -25,4 +25,4 @@ This is a julia tutorial accesible through binder and as a web page.
         ii. Open VSCode
         iii. Click on `Extensions`, search `julia` and click `install`.
         iv.  Click on `Extensions`, search `jupyter` and click `install`.
-        v.  Enable Notebook controller in the Julia extension settings.
+        v.   Enable Notebook controller in the Julia extension settings.
