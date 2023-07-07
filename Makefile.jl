@@ -1,15 +1,14 @@
-using Literate
+# Load packages
 
-# Filenames
-jls = filter(
-    x -> occursin(r"/[0-9]+-.*\.jl$|/index.jl$", x),
-    readdir("scripts", join = true)
-)
-ipynbs = replace.(replace.(jls, "scripts" => "notebooks"), ".jl" => ".ipynb")
+using ComposerTools
 
-# Create notebooks
-rm("notebooks", recursive = true, force = true)
-Literate.notebook.(jls, "notebooks", execute = true)
+# Update Manifest.toml and Project.toml
+
+copyproject()
+
+# Compile scripts to notebooks
+
+createnotebooks("scripts", "notebooks")
 
 # Create markdown files
 repo_path = "https://github.com/ErickChacon/julia-tutorial/blob/main"
