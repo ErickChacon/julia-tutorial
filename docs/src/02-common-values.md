@@ -9,209 +9,115 @@ In this section, we provide a quick introduction to common basic objects. The fu
 
 - Logical
 
-````julia
+````@example 02-common-values
 true
 ````
 
-````
-true
-````
-
-````julia
+````@example 02-common-values
 false
 ````
 
-````
-false
-````
-
-````julia
+````@example 02-common-values
 typeof(true)
-````
-
-````
-Bool
 ````
 
 - Integers
 
-````julia
+````@example 02-common-values
 1
 ````
 
-````
-1
-````
-
-````julia
+````@example 02-common-values
 typeof(1)
-````
-
-````
-Int64
 ````
 
 - Floating-Point numbers
 
-````julia
+````@example 02-common-values
 10.0
 ````
 
-````
-10.0
-````
-
-````julia
+````@example 02-common-values
 typeof(10.0)
-````
-
-````
-Float64
 ````
 
 - Complex numbers
 
-````julia
+````@example 02-common-values
 1 + 2im
 ````
 
-````
-1 + 2im
-````
-
-````julia
+````@example 02-common-values
 typeof(1 + 2im)
-````
-
-````
-Complex{Int64}
 ````
 
 - Rational numbers
 
-````julia
+````@example 02-common-values
 10 // 15
 ````
 
-````
-2//3
-````
-
-````julia
+````@example 02-common-values
 typeof(10 // 15)
-````
-
-````
-Rational{Int64}
 ````
 
 - Character
 
-````julia
+````@example 02-common-values
 'x'
 ````
 
-````
-'x': ASCII/Unicode U+0078 (category Ll: Letter, lowercase)
-````
-
-````julia
+````@example 02-common-values
 typeof('x')
 ````
 
-````
-Char
-````
-
-````julia
+````@example 02-common-values
 typeof('β')
-````
-
-````
-Char
 ````
 
 - Strings
 
-````julia
+````@example 02-common-values
 "julia"
 ````
 
-````
-"julia"
-````
-
-````julia
+````@example 02-common-values
 typeof("julia")
-````
-
-````
-String
 ````
 
 - Symbol
 
-````julia
+````@example 02-common-values
 :name
 ````
 
-````
-:name
-````
-
-````julia
+````@example 02-common-values
 typeof(:name)
-````
-
-````
-Symbol
 ````
 
 - Tuples: unmutable fixed-length container holding any values
 
-````julia
+````@example 02-common-values
 ("John", 29, 10.0)
 ````
 
-````
-("John", 29, 10.0)
-````
-
-````julia
+````@example 02-common-values
 typeof(("John", 29, 10.0))
-````
-
-````
-Tuple{String, Int64, Float64}
 ````
 
 - Named tuples: Tuples with element names
 
-````julia
+````@example 02-common-values
 (name = "John", age = 29, value = 10.0)
 ````
 
-````
-(name = "John", age = 29, value = 10.0)
-````
-
-````julia
+````@example 02-common-values
 typeof((name = "John", age = 29, value = 10.0))
-````
-
-````
-NamedTuple{(:name, :age, :value), Tuple{String, Int64, Float64}}
 ````
 
 - Dictionaries:
 
-````julia
+````@example 02-common-values
 Dict("Poisson" => 1, "Gaussian" => 2)
-````
-
-````
-Dict{String, Int64} with 2 entries:
-  "Gaussian" => 2
-  "Poisson" => 1
 ````
 

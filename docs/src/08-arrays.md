@@ -4,7 +4,7 @@ EditURL = "https://github.com/ErickChacon/julia-tutorial/blob/main/scripts/08-ar
 
 # Arrays
 
-````julia
+````@example 08-arrays
 using LinearAlgebra
 ````
 
@@ -12,185 +12,73 @@ using LinearAlgebra
 
 ### Vectors
 
-````julia
+````@example 08-arrays
 x = [1, 3, 4]
 ````
 
-````
-3-element Vector{Int64}:
- 1
- 3
- 4
-````
-
-````julia
+````@example 08-arrays
 x'
 ````
 
-````
-1×3 adjoint(::Vector{Int64}) with eltype Int64:
- 1  3  4
-````
-
-````julia
+````@example 08-arrays
 4x
 ````
 
-````
-3-element Vector{Int64}:
-  4
- 12
- 16
-````
-
-````julia
+````@example 08-arrays
 1 .+ x
 ````
 
-````
-3-element Vector{Int64}:
- 2
- 4
- 5
-````
-
-````julia
+````@example 08-arrays
 sqrt.(x)
 ````
 
-````
-3-element Vector{Float64}:
- 1.0
- 1.7320508075688772
- 2.0
-````
-
-````julia
+````@example 08-arrays
 g(x) = 3 + 2x^2
 g.(x)
 ````
 
-````
-3-element Vector{Int64}:
-  5
- 21
- 35
-````
-
 ### Matrices
 
-````julia
+````@example 08-arrays
 A = [1 4 5;
     3 4 5]
 ````
 
-````
-2×3 Matrix{Int64}:
- 1  4  5
- 3  4  5
-````
-
-````julia
+````@example 08-arrays
 5A
 ````
 
-````
-2×3 Matrix{Int64}:
-  5  20  25
- 15  20  25
-````
-
-````julia
+````@example 08-arrays
 5 .+ A
 ````
 
-````
-2×3 Matrix{Int64}:
- 6  9  10
- 8  9  10
-````
-
-````julia
+````@example 08-arrays
 A * x
 ````
 
-````
-2-element Vector{Int64}:
- 33
- 35
-````
-
-````julia
+````@example 08-arrays
 A .^ 2
 ````
 
-````
-2×3 Matrix{Int64}:
- 1  16  25
- 9  16  25
-````
-
-````julia
+````@example 08-arrays
 g.(A)
-````
-
-````
-2×3 Matrix{Int64}:
-  5  35  53
- 21  35  53
 ````
 
 ### Constructors
 
-````julia
+````@example 08-arrays
 zeros(5, 3)
 ````
 
-````
-5×3 Matrix{Float64}:
- 0.0  0.0  0.0
- 0.0  0.0  0.0
- 0.0  0.0  0.0
- 0.0  0.0  0.0
- 0.0  0.0  0.0
-````
-
-````julia
+````@example 08-arrays
 ones(5, 3)
 ````
 
-````
-5×3 Matrix{Float64}:
- 1.0  1.0  1.0
- 1.0  1.0  1.0
- 1.0  1.0  1.0
- 1.0  1.0  1.0
- 1.0  1.0  1.0
-````
-
-````julia
+````@example 08-arrays
 rand(5, 3)
 ````
 
-````
-5×3 Matrix{Float64}:
- 0.20116    0.192822  0.569628
- 0.961807   0.657509  0.360894
- 0.528036   0.262946  0.64144
- 0.0269265  0.085739  0.982797
- 0.879455   0.24183   0.884966
-````
-
-````julia
+````@example 08-arrays
 ones(5, 5) + I
-````
-
-````
-5×5 Matrix{Float64}:
- 2.0  1.0  1.0  1.0  1.0
- 1.0  2.0  1.0  1.0  1.0
- 1.0  1.0  2.0  1.0  1.0
- 1.0  1.0  1.0  2.0  1.0
- 1.0  1.0  1.0  1.0  2.0
 ````
 

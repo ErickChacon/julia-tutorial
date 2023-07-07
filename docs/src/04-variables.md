@@ -11,129 +11,77 @@ are case-sensitive.
 
 Variables are defined and modified using `=`, see some examples below.
 
-````julia
+````@example 04-variables
 x = 10
 print(x, ", ", typeof(x))
 ````
 
-````
-10, Int64
-````
-
-````julia
+````@example 04-variables
 x = 10.0
 print(x, ", ",  typeof(x))
 ````
 
-````
-10.0, Float64
-````
-
-````julia
+````@example 04-variables
 x = "Hello World!"
 print(x, ", ",  typeof(x))
 ````
 
-````
-Hello World!, String
-````
-
-````julia
+````@example 04-variables
 x = 1 + 2im
 print(x, ", ",  typeof(x))
 ````
 
-````
-1 + 2im, Complex{Int64}
-````
-
-````julia
+````@example 04-variables
 x = 1 // 2
 print(x, ", ",  typeof(x))
-````
-
-````
-1//2, Rational{Int64}
 ````
 
 ## Define more than one variable
 
 More that one variable can be defined using tuples syntax.
 
-````julia
+````@example 04-variables
 (a, b) = (1, 10)
 print(a, ", ", b)
 ````
 
-````
-1, 10
-````
-
-````julia
+````@example 04-variables
 a, b = 1, 10
 print(a, ", ", b)
 ````
 
-````
-1, 10
-````
-
-````julia
+````@example 04-variables
 (a, b) = 1, 10
 print(a, ", ", b)
 ````
 
-````
-1, 10
-````
-
-````julia
+````@example 04-variables
 a, b = (1, 10)
 print(a, ", ", b)
-````
-
-````
-1, 10
 ````
 
 ## Allowed variable names
 
 - Unicode names can be used. This helps to write code closer to mathematical equations.
 
-````julia
+````@example 04-variables
 μ = 0
 print(μ)
 ````
 
-````
-0
-````
-
-````julia
+````@example 04-variables
 σ = 1
 print(σ)
 ````
 
-````
-1
-````
-
-````julia
+````@example 04-variables
 α = 0.1
 print(α)
 ````
 
-````
-0.1
-````
-
-````julia
+````@example 04-variables
 β = 10.0
 print(β)
-````
-
-````
-10.0
 ````
 
 - Built-in constants or functions cannot be replaced after being used.
