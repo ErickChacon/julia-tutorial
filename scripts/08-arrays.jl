@@ -5,6 +5,9 @@
 # arrays.
 
 using LinearAlgebra
+import Random
+
+Random.seed!(11)
 
 # ## Basic syntax
 

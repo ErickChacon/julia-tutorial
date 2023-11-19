@@ -16,6 +16,9 @@ high-level packages written over Makie.jl to make coding easier:
 using DataFrames
 using CairoMakie
 using AlgebraOfGraphics
+import Random
+
+Random.seed!(11)
 
 df = DataFrame(id = 1:100, x = randn(100), y = randn(100))
 first(df, 5)

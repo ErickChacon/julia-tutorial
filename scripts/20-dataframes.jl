@@ -7,7 +7,9 @@
 # ## Define a DataFrame
 
 using DataFrames
+import Random
 
+Random.seed!(11)
 n = 100
 data = DataFrame(id = 1:n, x = rand(n), y = randn(n))
 
