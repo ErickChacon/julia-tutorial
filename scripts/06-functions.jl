@@ -38,7 +38,7 @@ f(1, 3)
 
 map(x -> 2x - 1, [1, 3, -1])
 
-# ## Return
+# ## Return values
 #
 # We can define the output type of the function
 
@@ -72,6 +72,7 @@ a, b = maxmin(2, 3.0)
 # A main feature of `julia` is multiple dispatching, meaning that it accepts multiple
 # definitions of a function with different number of arguments, or different argument
 # types. Then, the method called for evaluation will depend on the types of the arguments.
+# Remember that `::` is used to define the `Type`.
 
 function concatenate(x::Int, y::String)
     println("$x is an integer and $y is an string.")
@@ -82,6 +83,8 @@ function concatenate(x::String, y::String)
     x * y
 end
 concatenate("Hola", "Erick")
+
+# Try the following: `concatenate(10,10)`. Can you guess what happens?
 
 # ## Keyword arguments
 #
@@ -133,9 +136,11 @@ bar(1, 2, x...)
 #
 # Julia can combine functions by composing with the operator `∘`.
 
-sqrt(+(3, 6))
+x = (3, 6)
+sqrt(sum(x))
 #-
-(sqrt ∘ +)(3, 6)
+fun = sqrt ∘ sum
+fun(x)
 
 # In the following example we create a function that reverse an "string", then obtain the
 # first letter, and finally convert it to capital.
@@ -143,12 +148,9 @@ sqrt(+(3, 6))
 lastletter = uppercase ∘ first ∘ reverse
 lastletter("julia")
 #-
-map(uppercase ∘ first ∘ reverse, ("this", "is", "julia"))
+map(uppercase ∘ first ∘ reverse, ("It", "is", "julia"))
 
-# On the other hand, the pipe operator `|>` can be used to use the output of a function as
+# On the other hand, the pipe operator `|>` can be applied to use the output of a function as
 # the input of another function.
 
-(3, 6) |>
-    sum |>
-    sqrt
-
+x |> sum |> sqrt
