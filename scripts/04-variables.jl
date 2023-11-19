@@ -8,19 +8,19 @@
 # Variables are defined and modified using `=`, see some examples below.
 
 x = 10
-print(x, ", ", typeof(x))
+print(x, " is a ", typeof(x))
 #-
 x = 10.0
-print(x, ", ",  typeof(x))
+print(x, " is a ",  typeof(x))
 #-
 x = "Hello World!"
-print(x, ", ",  typeof(x))
+print(x, " is a ",  typeof(x))
 #-
 x = 1 + 2im
-print(x, ", ",  typeof(x))
+print(x, " is a ",  typeof(x))
 #-
 x = 1 // 2
-print(x, ", ",  typeof(x))
+print(x, " is a ",  typeof(x))
 
 # ## Define more than one variable
 #
@@ -45,14 +45,14 @@ print(a, ", ", b)
 μ = 0
 print(μ)
 #-
-σ = 1
-print(σ)
+σ² = 3
+print(σ²)
 #-
 α = 0.1
 print(α)
 #-
-β = 10.0
-print(β)
+β₀ = 10.0
+print(β₀)
 
 # - Built-in constants or functions cannot be replaced after being used.
 #
@@ -79,6 +79,20 @@ print(β)
 # #  [1] top-level scope at none:1
 # ```
 #
+# ### Type declaration
+
+myvariable::Int8 = 10
+
+# ```julia
+# myvariable = 3.3
+# # ERROR: InexactError: Int8(3.3)
+# ```
+
+# ```julia
+# myvariable = "text"
+# ERROR: MethodError: Cannot `convert` an object of type String to an object of type Int8
+# ```
+
 # ### Some Julia naming conventions
 #
 # - Use lower case for variables, functions, and macros (e.g. `name = "Julia"`).

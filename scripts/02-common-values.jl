@@ -16,12 +16,20 @@ typeof(true)
 1
 #-
 typeof(1)
+#-
+Int8(1)
+#-
+typeof(Int8(1))
 
 # - Floating-Point numbers
 
 10.0
 #-
 typeof(10.0)
+#-
+Float16(10.0)
+#-
+typeof(Float16(1))
 
 # - Complex numbers
 
@@ -49,13 +57,13 @@ typeof('β')
 #-
 typeof("julia")
 
-# - Symbol
+# - Symbol: Object used to represent identifiers
 
 :name
 #-
 typeof(:name)
 
-# - Tuples: unmutable fixed-length container holding any values
+# - Tuples: Unmutable fixed-length container holding any values
 
 ("John", 29, 10.0)
 #-
@@ -67,7 +75,15 @@ typeof(("John", 29, 10.0))
 #-
 typeof((name = "John", age = 29, value = 10.0))
 
-# - Dictionaries:
+# - Pair: Unmutable object with two elements (first and second)
+
+"January" => 1
+#-
+typeof("January" => 1)
+
+# - Dictionaries: Table with keys and values.
 
 Dict("Poisson" => 1, "Gaussian" => 2)
+#-
+typeof(Dict("Poisson" => 1, "Gaussian" => 2))
 
