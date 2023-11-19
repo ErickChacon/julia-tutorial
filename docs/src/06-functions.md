@@ -1,5 +1,5 @@
 ```@meta
-EditURL = "https://github.com/ErickChacon/julia-tutorial/blob/main/scripts/06-functions.jl"
+EditURL = "../../scripts/06-functions.jl"
 ```
 
 # Functions
@@ -52,7 +52,7 @@ using the `map` function.
 map(x -> 2x - 1, [1, 3, -1])
 ````
 
-## Return
+## Return values
 
 We can define the output type of the function
 
@@ -98,6 +98,7 @@ a, b = maxmin(2, 3.0)
 A main feature of `julia` is multiple dispatching, meaning that it accepts multiple
 definitions of a function with different number of arguments, or different argument
 types. Then, the method called for evaluation will depend on the types of the arguments.
+Remember that `::` is used to define the `Type`.
 
 ````@example 06-functions
 function concatenate(x::Int, y::String)
@@ -112,6 +113,8 @@ function concatenate(x::String, y::String)
 end
 concatenate("Hola", "Erick")
 ````
+
+Try the following: `concatenate(10,10)`. Can you guess what happens?
 
 ## Keyword arguments
 
@@ -173,11 +176,13 @@ bar(1, 2, x...)
 Julia can combine functions by composing with the operator `∘`.
 
 ````@example 06-functions
-sqrt(+(3, 6))
+x = (3, 6)
+sqrt(sum(x))
 ````
 
 ````@example 06-functions
-(sqrt ∘ +)(3, 6)
+fun = sqrt ∘ sum
+fun(x)
 ````
 
 In the following example we create a function that reverse an "string", then obtain the
@@ -189,15 +194,13 @@ lastletter("julia")
 ````
 
 ````@example 06-functions
-map(uppercase ∘ first ∘ reverse, ("this", "is", "julia"))
+map(uppercase ∘ first ∘ reverse, ("It", "is", "julia"))
 ````
 
-On the other hand, the pipe operator `|>` can be used to use the output of a function as
+On the other hand, the pipe operator `|>` can be applied to use the output of a function as
 the input of another function.
 
 ````@example 06-functions
-(3, 6) |>
-    sum |>
-    sqrt
+x |> sum |> sqrt
 ````
 

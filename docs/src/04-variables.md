@@ -1,5 +1,5 @@
 ```@meta
-EditURL = "https://github.com/ErickChacon/julia-tutorial/blob/main/scripts/04-variables.jl"
+EditURL = "../../scripts/04-variables.jl"
 ```
 
 # Variables
@@ -13,27 +13,27 @@ Variables are defined and modified using `=`, see some examples below.
 
 ````@example 04-variables
 x = 10
-print(x, ", ", typeof(x))
+print(x, " is a ", typeof(x))
 ````
 
 ````@example 04-variables
 x = 10.0
-print(x, ", ",  typeof(x))
+print(x, " is a ",  typeof(x))
 ````
 
 ````@example 04-variables
 x = "Hello World!"
-print(x, ", ",  typeof(x))
+print(x, " is a ",  typeof(x))
 ````
 
 ````@example 04-variables
 x = 1 + 2im
-print(x, ", ",  typeof(x))
+print(x, " is a ",  typeof(x))
 ````
 
 ````@example 04-variables
 x = 1 // 2
-print(x, ", ",  typeof(x))
+print(x, " is a ",  typeof(x))
 ````
 
 ## Define more than one variable
@@ -70,8 +70,8 @@ print(μ)
 ````
 
 ````@example 04-variables
-σ = 1
-print(σ)
+σ² = 3
+print(σ²)
 ````
 
 ````@example 04-variables
@@ -80,8 +80,8 @@ print(α)
 ````
 
 ````@example 04-variables
-β = 10.0
-print(β)
+β₀ = 10.0
+print(β₀)
 ````
 
 - Built-in constants or functions cannot be replaced after being used.
@@ -107,6 +107,22 @@ else = false
 # ERROR: syntax: unexpected "else"
 # Stacktrace:
 #  [1] top-level scope at none:1
+```
+
+### Type declaration
+
+````@example 04-variables
+myvariable::Int8 = 10
+````
+
+```julia
+myvariable = 3.3
+# ERROR: InexactError: Int8(3.3)
+```
+
+```julia
+myvariable = "text"
+ERROR: MethodError: Cannot `convert` an object of type String to an object of type Int8
 ```
 
 ### Some Julia naming conventions

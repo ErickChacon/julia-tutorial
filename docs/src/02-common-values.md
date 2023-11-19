@@ -1,5 +1,5 @@
 ```@meta
-EditURL = "https://github.com/ErickChacon/julia-tutorial/blob/main/scripts/02-common-values.jl"
+EditURL = "../../scripts/02-common-values.jl"
 ```
 
 # Common values
@@ -31,6 +31,14 @@ typeof(true)
 typeof(1)
 ````
 
+````@example 02-common-values
+Int8(1)
+````
+
+````@example 02-common-values
+typeof(Int8(1))
+````
+
 - Floating-Point numbers
 
 ````@example 02-common-values
@@ -39,6 +47,14 @@ typeof(1)
 
 ````@example 02-common-values
 typeof(10.0)
+````
+
+````@example 02-common-values
+Float16(10.0)
+````
+
+````@example 02-common-values
+typeof(Float16(1))
 ````
 
 - Complex numbers
@@ -85,7 +101,7 @@ typeof('β')
 typeof("julia")
 ````
 
-- Symbol
+- Symbol: Object used to represent identifiers
 
 ````@example 02-common-values
 :name
@@ -95,7 +111,7 @@ typeof("julia")
 typeof(:name)
 ````
 
-- Tuples: unmutable fixed-length container holding any values
+- Tuples: Unmutable fixed-length container holding any values
 
 ````@example 02-common-values
 ("John", 29, 10.0)
@@ -115,9 +131,23 @@ typeof(("John", 29, 10.0))
 typeof((name = "John", age = 29, value = 10.0))
 ````
 
-- Dictionaries:
+- Pair: Unmutable object with two elements (first and second)
+
+````@example 02-common-values
+"January" => 1
+````
+
+````@example 02-common-values
+typeof("January" => 1)
+````
+
+- Dictionaries: Table with keys and values.
 
 ````@example 02-common-values
 Dict("Poisson" => 1, "Gaussian" => 2)
+````
+
+````@example 02-common-values
+typeof(Dict("Poisson" => 1, "Gaussian" => 2))
 ````
 

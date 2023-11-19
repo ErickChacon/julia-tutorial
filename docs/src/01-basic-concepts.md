@@ -1,5 +1,5 @@
 ```@meta
-EditURL = "https://github.com/ErickChacon/julia-tutorial/blob/main/scripts/01-basic-concepts.jl"
+EditURL = "../../scripts/01-basic-concepts.jl"
 ```
 
 # Basic concepts
