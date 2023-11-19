@@ -9,7 +9,7 @@ This is a julia tutorial accesible through binder and as a web page.
 [docs-url]: https://erickchacon.github.io/julia-tutorial/
 
 [binder-img]: https://mybinder.org/badge_logo.svg
-[binder-url]: https://mybinder.org/v2/gh/ErickChacon/julia-for-statistics/HEAD?filepath=notebooks
+[binder-url]: https://mybinder.org/v2/gh/ErickChacon/julia-tutorial/HEAD?labpath=notebooks
 
 ## Julia Setup
 
