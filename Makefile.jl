@@ -5,7 +5,7 @@ using Literate
 
 # Update Manifest.toml and Project.toml
 
-copyproject()
+# copyproject()
 
 # Compile scripts to notebooks
 
