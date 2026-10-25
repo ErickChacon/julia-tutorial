@@ -4,9 +4,9 @@
 # strings, so on. Below, we see an example of an string, numeric and complex value.
 
 "Hello"
-
+#-
 2021
-
+#-
 2 + 1im
 
 # - **Variables**: A value can be assigned to a variable using the equality symbol `=`.
@@ -24,7 +24,7 @@ function greet_name(x)
     out = "Hello, "  * x
     return out
 end
-
+#-
 greet_name("Julia")
 
 # - **Printing**: The most common function to print a text is `print`, while `println` has
@@ -35,5 +35,3 @@ greet_name("Julia")
 who = "Erick"
 greet = "Hello"
 println("Welcome! $greet, $(who)!")
-
-# This file was generated using Literate.jl, https://github.com/fredrikekre/Literate.jl

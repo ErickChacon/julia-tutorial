@@ -9,16 +9,16 @@
 
 x = 10
 print(x, " is a ", typeof(x))
-
+#-
 x = 10.0
 print(x, " is a ",  typeof(x))
-
+#-
 x = "Hello World!"
 print(x, " is a ",  typeof(x))
-
+#-
 x = 1 + 2im
 print(x, " is a ",  typeof(x))
-
+#-
 x = 1 // 2
 print(x, " is a ",  typeof(x))
 
@@ -28,13 +28,13 @@ print(x, " is a ",  typeof(x))
 
 (a, b) = (1, 10)
 print(a, ", ", b)
-
+#-
 a, b = 1, 10
 print(a, ", ", b)
-
+#-
 (a, b) = 1, 10
 print(a, ", ", b)
-
+#-
 a, b = (1, 10)
 print(a, ", ", b)
 
@@ -44,13 +44,13 @@ print(a, ", ", b)
 
 μ = 0
 print(μ)
-
+#-
 σ² = 3
 print(σ²)
-
+#-
 α = 0.1
 print(α)
-
+#-
 β₀ = 10.0
 print(β₀)
 
@@ -99,5 +99,3 @@ myvariable::Int8 = 10
 # - Underscore (`_`) use is discouraged (e.g. `lastname = "Montalvan"`).
 # - Use *uper camel case* for `Types` and `Modules`.
 # - Use `!` at the end of a function name when it mutates its arguments.
-
-# This file was generated using Literate.jl, https://github.com/fredrikekre/Literate.jl

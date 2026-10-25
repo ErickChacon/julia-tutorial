@@ -88,6 +88,7 @@ draw(g)
 g = data(df) * mapping(:x => (z -> 10z) => "First variable", :y => "Second variable")
 draw(g)
 
+
 # We can use another geometry with `visual`:
 
 g = data(df) * mapping(:x, :y) * visual(Lines, color = :red, linewidth = 3)
@@ -111,7 +112,6 @@ g = data(df) * mapping(:x, :y, color = :group) *
 draw(g)
 
 # You can factorize any part:
-
 addnoise(x) = x + rand()
 g = data(df) *
     (mapping(:x, :y, color = :group) + mapping(:x, :y => addnoise))
@@ -123,12 +123,16 @@ g = data(df) * mapping(:x, :y, layout = :group, color = :group) *
     (visual(Scatter) + visual(Lines))
 fig = draw(g)
 
+#-
+
 g = data(df) * mapping(:x, :y, row = :group, color = :group) *
     (visual(Scatter) + visual(Lines))
 fig = draw(g, axis = (width = 130, height = 130))
+
+#-
 
 g = data(df) * mapping(:x, :y, col = :group, color = :group) *
     (visual(Scatter) + visual(Lines))
 fig = draw(g, axis = (width = 130, height = 130))
 
-# This file was generated using Literate.jl, https://github.com/fredrikekre/Literate.jl
+

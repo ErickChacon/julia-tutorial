@@ -60,11 +60,11 @@ printx(10.0)
 function maxmin(x, y)
     return max(x, y), min(x, y)
 end
-
+#-
 maxmin(2, 3.0)
-
+#-
 typeof(maxmin(2, 3.0))
-
+#-
 a, b = maxmin(2, 3.0)
 
 # ## Multiple dispatching
@@ -78,7 +78,7 @@ function concatenate(x::Int, y::String)
     println("$x is an integer and $y is an string.")
 end
 concatenate(1, "hola")
-
+#-
 function concatenate(x::String, y::String)
     x * y
 end
@@ -118,16 +118,17 @@ function bar(a, b, x...)
     a, b, x
 end
 bar(1, 2)
-
+#-
 bar(1, 2, 3)
-
+#-
 bar(1, 2, 3, 4)
+#-
 
 # A similar syntax can be used to splat the values of a collection.
 
 extra = (3, 4)
 bar(1, 2, extra...)
-
+#-
 x = [3, 4]
 bar(1, 2, x...)
 
@@ -137,7 +138,7 @@ bar(1, 2, x...)
 
 x = (3, 6)
 sqrt(sum(x))
-
+#-
 fun = sqrt ∘ sum
 fun(x)
 
@@ -146,12 +147,10 @@ fun(x)
 
 lastletter = uppercase ∘ first ∘ reverse
 lastletter("julia")
-
+#-
 map(uppercase ∘ first ∘ reverse, ("It", "is", "julia"))
 
 # On the other hand, the pipe operator `|>` can be applied to use the output of a function as
 # the input of another function.
 
 x |> sum |> sqrt
-
-# This file was generated using Literate.jl, https://github.com/fredrikekre/Literate.jl

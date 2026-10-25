@@ -29,26 +29,38 @@ x'
 
 1 .+ x
 
+#-
+
 sqrt.(x)
 
 # The dot operator is atuomatically available for any function:
 
 g(x) = 3 + 2x^2
-
+#-
 g.(x)
 
 # ### Matrices
 
 A = [1 4 5;
     3 4 5]
+#-
 
 5A
 
+#-
+
 5 .+ A
+
+
+#-
 
 A * x
 
+#-
+
 A .^ 2
+
+#-
 
 g.(A)
 
@@ -56,12 +68,18 @@ g.(A)
 
 zeros(5, 3)
 
+#-
+
 ones(5, 3)
+
+#-
 
 rand(5, 3)
 
+#-
+
 randn(5, 3)
 
-ones(5, 5) + I
+#-
 
-# This file was generated using Literate.jl, https://github.com/fredrikekre/Literate.jl
+ones(5, 5) + I
